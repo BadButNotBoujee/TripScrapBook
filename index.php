@@ -3,6 +3,7 @@
 <html>
     
     <head>
+      <?php require_once(SHARED_PATH."/dependencies.php")?>
        <title>Nice Trip Beta</title>
        <style type="text/css">
            .card-header, .btn {
@@ -68,7 +69,7 @@
    
     </footer>
     
-    <?php require_once(SHARED_PATH."/dependencies.php")?>
+  
       
 </html>
 
