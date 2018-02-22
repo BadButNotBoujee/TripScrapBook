@@ -23,7 +23,7 @@
         <?php require_once(SHARED_PATH."/header.php")?>
     </header>
     
-    <body class="container-fluid" style="background: url("./back.jpg")">
+    <body class="container-fluid" >
           <?php require_once(PUBLIC_PATH."/login.php") ?>
     </body>
     
