@@ -24,7 +24,7 @@
      <h2 style="text-align: center"><u> Trip Scrap Book </u></h2> 
     </header>
     
-    <body class="bg-light">
+    <body class="bg-light container-fluid">
          <div class="row">
 				<div class="col-sm-3"></div>         
          	<div class="col-sm-6">

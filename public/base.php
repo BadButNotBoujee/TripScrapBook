@@ -22,8 +22,8 @@
     <header>
         <?php require_once(SHARED_PATH."/header.php")?>
     </header>
-    
-    <body class="bg-light">
+     
+    <body class="bg-light container-fluid">
           <?php require_once(PUBLIC_PATH."/login.php") ?>
     </body>
     
