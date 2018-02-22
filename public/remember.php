@@ -11,23 +11,26 @@
                     <button class="btn btn-success float-right">Submit</button><br><br>
                     <hr>
                      </form>
-                 <?php    
+                          
+                </div>
+                
+                  <?php    
                         
                         $connection = makeConnection();
                         $stat = pg_connection_status($connection);
                         echo $stat;
                        $sqlquery = "SELECT * FROM REMINDER";
                        $result = pg_query($connection, $sqlquery);
+                       
                         while($row = pg_fetch_row($result)) {
-                          echo $row[0];
+                          echo "<hr>"
+                          echo "#".$row[0]." : <u>".$row[1]."</u><br>".$row[2];
+                          echo "<hr>"
                         }
                        
                      pg_close($connection);  
                     
                     ?>
-                  
                     
-                    
-                </div>
             </div>
 </div>

@@ -22,9 +22,7 @@
         echo "ERROR MAKING SUBMISSION";
     }
     
-    
-   
-    
+        
     pg_close($connection);
     
 ?>
