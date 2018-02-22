@@ -19,7 +19,7 @@
                         $connection = makeConnection();
                         $stat = pg_connection_status($connection);
                        echo $stat;
-                       $sqlquery = "SHOW TABLES";
+                       $sqlquery = "SELECT * FROM pg_catalog.pg_tables;";
                        $result = pg_query($connection, $sqlquery);
                        
                         echo $result;

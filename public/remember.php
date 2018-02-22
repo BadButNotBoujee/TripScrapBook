@@ -18,7 +18,7 @@
                         
                         $connection = makeConnection();
                        
-                       $sqlquery = "SELECT * FROM REMINDER";
+                       $sqlquery = "SELECT * FROM REMINDER;";
                        $result = pg_query($connection, $sqlquery);
                        
                         while($row = pg_fetch_row($result)) {
