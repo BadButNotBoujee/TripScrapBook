@@ -24,11 +24,11 @@
      <h2 style="text-align: center"><u> Trip Scrap Book </u></h2> 
     </header>
     
-    <body class="bg-light">
+    <body class="bg-light container">
          <div class="row">
 				<div class="col-sm-3"></div>         
          	<div class="col-sm-6">
-					<div class="card" style="margin: 1em 1em 1em 1em;">
+					<div class="card" >
           			  <div class="card-header " style="text-align: center">Login</div>
           					
           			  <div class="card-body"  style=" text-align: center;">
