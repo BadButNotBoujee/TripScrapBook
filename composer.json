@@ -1,6 +1,5 @@
 {
-
-    "require": {
+ "require": {
         "herrera-io/silex-pdo": "^1.2",
         "pimple/pimple": "~1.0",
         "silex/silex": "~1.1"
