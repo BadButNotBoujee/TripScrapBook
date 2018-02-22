@@ -40,7 +40,7 @@
         <?php require_once(SHARED_PATH."/header.php")?>
     </header>
     
-    <body class="container-fluid bg" >
+    <body class="container-fluid bg-light bg" >
           <?php require_once(PUBLIC_PATH."/login.php") ?>
     </body>
     
