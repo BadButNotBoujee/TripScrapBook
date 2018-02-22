@@ -22,7 +22,7 @@
     </header>
     
     <body class="bg-light">
-          <?php require_once(WROOT."/login.php") ?>
+          <?php require_once(PUBLIC_PATH."/login.php") ?>
     </body>
     
     <footer>
