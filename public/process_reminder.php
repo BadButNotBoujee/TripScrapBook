@@ -1,3 +1,5 @@
+<?php require_once("../private/initialize.php"); ?>
+
 <?php
 
     $title = str_replace("\"","&quot", $_POST["reminder-title"]);
@@ -15,7 +17,7 @@
     
     if($result){
         //  header('Location:'.WROOT.'/user/questions/all_questions.php?uname='.$username);
-        header('Location: /base.php');
+        header('Location: ./base.php');
     }else{
         echo "ERROR MAKING SUBMISSION";
     }

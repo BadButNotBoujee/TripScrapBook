@@ -1,3 +1,5 @@
+<?php require_once("../private/initialize.php"); ?>
+
 <?php
 
     $title = str_replace("\"","&quot", $_POST["interest-title"]);
