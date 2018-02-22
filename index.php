@@ -55,6 +55,7 @@
                        	}
                        	
                        	echo "<br> connection status: " .  $stat ; 
+                       	pg_close($connection);
                         ?>
                     
           				<hr>
