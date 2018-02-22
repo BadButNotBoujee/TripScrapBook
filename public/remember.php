@@ -18,14 +18,14 @@
                         
                         $connection = makeConnection();
                         $stat = pg_connection_status($connection);
-                        echo $stat;
+                       
                        $sqlquery = "SELECT * FROM REMINDER";
                        $result = pg_query($connection, $sqlquery);
                        
                         while($row = pg_fetch_row($result)) {
-                          echo "<hr>"
+                          echo "<hr>";
                           echo "#".$row[0]." : <u>".$row[1]."</u><br>".$row[2];
-                          echo "<hr>"
+                          echo "<hr>";
                         }
                        
                      pg_close($connection);  
