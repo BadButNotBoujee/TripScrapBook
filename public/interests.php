@@ -16,8 +16,7 @@
                 
                   <?php    
                         
-                        $connection = makeConnection();
-                        $stat = pg_connection_status($connection);
+                       $connection = makeConnection();
                        
                        $sqlquery = "SELECT * FROM INTERESTS";
                        $result = pg_query($connection, $sqlquery);
