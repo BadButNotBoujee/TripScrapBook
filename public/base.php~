@@ -18,7 +18,11 @@
             body, html {
   			  height: 100%;
 				}
-
+			.card{
+				
+        filter: alpha(opacity=80);
+        opacity: 0.8;		
+			}
 			.bg {
   				  /* The image used */
   				  background-image: url("back.jpg");

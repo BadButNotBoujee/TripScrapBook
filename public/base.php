@@ -20,8 +20,8 @@
 				}
 			.card{
 				
-        filter: alpha(opacity=80);
-        opacity: 0.8;		
+        filter: alpha(opacity=90);
+        opacity: 0.9;		
 			}
 			.bg {
   				  /* The image used */
