@@ -41,6 +41,7 @@
           				</form>	
           				
           				<hr>
+          				<u>CONNECTION CONSOLE</u>
           				   <?php $connection = makeConnection();
                         $stat = pg_connection_status($connection); 
                         
