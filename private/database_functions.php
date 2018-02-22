@@ -30,7 +30,8 @@ function  initializeTables(){
 	$connection = makeConnection();
 	
    $myfile = fopen("TABLES.txt", "r") or die("Unable to open file!");
-	$sqlquery = fread($myfile,filesize("webdictionary.txt"));
+	$sqlquery = fread($myfile,filesize("TABLES.txt"));
+	
 	fclose($myfile);
    pg_query($connection, $sqlquery);
    
