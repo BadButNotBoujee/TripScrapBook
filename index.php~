@@ -28,7 +28,7 @@
          <div class="row">
 				<div class="col-sm-3"></div>         
          	<div class="col-sm-6">
-					<div class="card" style="margin: 1em 1em 1em 1em;">
+					<div class="card" style="">
           			  <div class="card-header " style="text-align: center">Login</div>
           					
           			  <div class="card-body"  style=" text-align: center;">
