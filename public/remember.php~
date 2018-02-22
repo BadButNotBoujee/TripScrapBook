@@ -5,14 +5,13 @@
             <div class="card-body">
                 
                 <div id="reminder-form" class="collapse">
-                    <form>
+                    <form action="process_reminder.php" method="POST">
                      <input class="form-control" type="text" placeholder="Title" name="reminder-title"><br>
                     <textarea class="form-control" name="reminder-body" placeholder="Details" rows="3"></textarea><br>
                     <button class="btn btn-success float-right">Submit</button><br><br>
                     <hr>
-                    
                      </form>
-                 <?php   /** 
+                 <?php    
                         
                         $connection = makeConnection();
                         $stat = pg_connection_status($connection);
@@ -23,7 +22,8 @@
                           echo $row[0];
                         }
                        
-                    pg_close($connection);  **/
+                     pg_close($connection);  
+                    
                     ?>
                   
                     
