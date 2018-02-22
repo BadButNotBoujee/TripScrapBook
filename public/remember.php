@@ -24,7 +24,7 @@
                        
                         while($row = pg_fetch_row($result)) {
                           echo "<hr>";
-                          echo "#".$row[0]." : <u>".$row[1]."</u><br>".$row[2];
+                          echo "<u>#".$row[0]." : ".$row[1]."</u><br>".$row[2];
                           echo "<hr>";
                         }
                        
