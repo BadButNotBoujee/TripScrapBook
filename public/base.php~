@@ -14,6 +14,23 @@
              font-family: 'Lobster', cursive;
             
             }
+            
+            body, html {
+  			  height: 100%;
+				}
+
+			.bg {
+  				  /* The image used */
+  				  background-image: url("img_girl.jpg");
+
+  				  /* Full height */
+  				  height: 100%;
+
+  				  /* Center and scale the image nicely */
+  				  background-position: center;
+  				  background-repeat: no-repeat;
+  				  background-size: cover;
+				}
        </style>
        
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +40,7 @@
         <?php require_once(SHARED_PATH."/header.php")?>
     </header>
     
-    <body class="container-fluid" style="background-image: url("./back.jpg") no-repeat fixed center ">
+    <body class="container-fluid bg" >
           <?php require_once(PUBLIC_PATH."/login.php") ?>
     </body>
     
