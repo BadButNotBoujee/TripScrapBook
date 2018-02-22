@@ -37,15 +37,18 @@
     </head>
     
     <header>
-        <?php require_once(SHARED_PATH."/header.php")?>
     </header>
     
     <body class="container-fluid bg" >
+          <?php require_once(SHARED_PATH."/header.php")?>
+  
           <?php require_once(PUBLIC_PATH."/login.php") ?>
+          
+          <?php require_once(SHARED_PATH."/footer.php")?>
+  
     </body>
     
     <footer>
-        <?php require_once(SHARED_PATH."/footer.php")?>
     </footer>
     
     <?php require_once(SHARED_PATH."/dependencies.php")?>
