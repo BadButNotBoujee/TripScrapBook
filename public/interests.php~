@@ -19,12 +19,7 @@
                        $sqlquery = "SELECT * FROM INTERESTS";
                        $result = pg_query($connection, $sqlquery);
                        
-                        while($row = pg_fetch_row($result)) {
-                          echo "<hr>";
-                          echo "<u>#".$row[0]." : ".$row[1]."</u><br>".$row[2];
-                          echo "<hr>";
-                        }
-                       
+                      
                      pg_close($connection);  
                      ?>            
             
