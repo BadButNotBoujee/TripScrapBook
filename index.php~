@@ -61,7 +61,7 @@
                         ?>
 
 							<br>
-							<button class="btn btn-danger" type="submit" >INITIALISE DATABASE</button>   
+							<a href=<?php echo WROOT."/../private/initialize_database.php"?>><button class="btn btn-danger"  >INITIALISE DATABASE</button></a>
 							                       
                         
           				<hr>
