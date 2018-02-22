@@ -11,7 +11,7 @@
     $documentRoot = substr($_SERVER["SCRIPT_NAME"],0, $posOfPublic); 
     define("WROOT",$documentRoot );
    
-   // require_once("database_functions.php");
+    require_once("database_functions.php");
 
 
 ?>

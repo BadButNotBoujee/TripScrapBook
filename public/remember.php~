@@ -10,6 +10,8 @@
                     <textarea class="form-control" name="reminder-body" placeholder="Details" rows="3"></textarea><br>
                     <button class="btn btn-success float-right">Submit</button><br><br>
                     <hr>
+                    
+                     </form>
                  <?php   /** 
                         
                         $connection = makeConnection();
@@ -25,7 +27,7 @@
                     ?>
                   
                     
-                     </form>
+                    
                 </div>
             </div>
 </div>
