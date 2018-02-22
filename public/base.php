@@ -23,7 +23,7 @@
         <?php require_once(SHARED_PATH."/header.php")?>
     </header>
     
-    <body class="bg-light container-fluid">
+    <body class="bg-light container-fluid" style="background: url("https://en.wikipedia.org/wiki/Nice#/media/File:Hafen_von_Nizza.jpg")">
           <?php require_once(PUBLIC_PATH."/login.php") ?>
     </body>
     
