@@ -29,14 +29,10 @@ function  initializeTables(){
 	
 	$connection = makeConnection();
 	
-	$sqlquery = "CREATE TABLE REMINDER(ID SERIAL NOT NULL UNIQUE, TITLE varchar(3000), DETAILS varchar(3000), PRIMARY KEY(ID));";
+	$sqlquery = "CREATE TABLE REMINDER(ID SERIAL NOT NULL UNIQUE, TITLE varchar(3000), DETAILS varchar(3000), PRIMARY KEY(ID));CREATE TABLE INTERESTS(ID SERIAL NOT NULL UNIQUE,TITLE varchar(3000),DETAILS varchar(6000),PRIMARY KEY(ID));";
 	
    $result = pg_query($connection, $sqlquery);
    
-   $sqlquery = "CREATE TABLE INTERESTS(ID SERIAL NOT NULL UNIQUE,TITLE varchar(3000),DETAILS varchar(6000),PRIMARY KEY(ID));";
-	
-   $result = pg_query($connection, $sqlquery);
-  
 	pg_close($connection);
 	
 	return $result;

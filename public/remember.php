@@ -1,3 +1,4 @@
+<?php require_once("../private/initialize.php"); ?>
 
 <div class="card" style="margin: 1em 1em 1em 1em;">
             <div class="card-header" style="color: black; background-color: #ffb3b3">Remember List <button class="btn btn-success float-right" data-toggle="collapse" data-target="#reminder-form">Add Reminder</button></div>

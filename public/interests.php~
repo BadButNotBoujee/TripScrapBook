@@ -1,3 +1,4 @@
+<?php require_once("../private/initialize.php"); ?>
 
 <div class="card" style="margin: 1em 1em 1em 1em;">
             <div class="card-header" style="color: black; background-color: #ffb3b3">Interests <button class="btn btn-success float-right" data-toggle="collapse" data-target="#interests-form">Add Interest</button></div>
@@ -17,13 +18,7 @@
                   <?php    
                         
                         $connection = makeConnection();
-                        $stat = pg_connection_status($connection);
-                       echo $stat;
-                       $sqlquery = "SELECT * FROM pg_catalog.pg_tables;";
-                       $result = pg_query($connection, $sqlquery);
-                       
-                        echo $result;
-                       
+                                              
                       
                      pg_close($connection);  
                     
