@@ -19,16 +19,12 @@
                         $connection = makeConnection();
                         $stat = pg_connection_status($connection);
                        echo $stat;
-                      
-                       $sqlquery = "SELECT * FROM INTERESTS";
+                       $sqlquery = "SHOW TABLES";
                        $result = pg_query($connection, $sqlquery);
                        
-                        while($row = pg_fetch_row($result)) {
-                          echo "<hr>";
-                          echo "<u>#".$row[0]." : ".$row[1]."</u><br>".$row[2];
-                          echo "<hr>";
-                        }
+                        echo $result;
                        
+                      
                      pg_close($connection);  
                     
                     ?>

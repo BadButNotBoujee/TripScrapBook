@@ -19,7 +19,11 @@
                         $connection = makeConnection();
                         $stat = pg_connection_status($connection);
                        echo $stat;
-                      
+                       $sqlquery = "SHOW TABLES";
+                       $result = pg_query($connection, $sqlquery);
+                       
+                        echo $result;
+                       
                       
                      pg_close($connection);  
                     
