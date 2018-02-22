@@ -1,9 +1,12 @@
 <?php  
+require_once("../private/initialize.php"); 
 
-if($_POST["pass"] == "nice"){
-  header('Location: ./base.php');
+$input = $_POST["pass"];
+
+if($input == 'nice'){
+  header('Location:'. WROOT .'/base.php');
 }else{
-  header('Location: ../index.php');
+  header('Location:'. WROOT .'/../index.php');
 }
 
 
