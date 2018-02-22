@@ -44,14 +44,14 @@
           				</form>	
           				
           				<hr>
-          				<u>CONNECTION CONSOLE</u>
+          				<u>DEVELOPER TOOLS</u>
           					   <?php 
           					   
           					   $connection = makeConnection();
                         $stat = pg_connection_status($connection); 
                         
                        	if($connection){
-                       		echo "<br> Connected";
+                       		echo "<br> Connected to Database";
                        	}else {
                        	  echo "<br> Disconnected";
                        	}
@@ -59,7 +59,11 @@
                        	echo "<br> connection status: " .  $stat ; 
                        	pg_close($connection);
                         ?>
-                    
+
+							<br>
+							<button class="btn btn-danger" type="submit" >INITIALISE DATABASE</button>   
+							                       
+                        
           				<hr>
           				<p style="font-size:small">
                       &copy ShayneOS</p>

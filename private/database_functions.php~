@@ -26,7 +26,6 @@ $app->register(new PdoServiceProvider(),
 
 
 function  initializeTables(){
-	
 	$connection = makeConnection();
 	
    $myfile = fopen("TABLES.txt", "r") or die("Unable to open file!");
