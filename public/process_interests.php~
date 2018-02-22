@@ -17,7 +17,7 @@
     
     if($result){
         //  header('Location:'.WROOT.'/user/questions/all_questions.php?uname='.$username);
-        echo $result;
+        echo $result[0].$result[1].$result[2];
     }else{
         echo "ERROR MAKING SUBMISSION";
     }
