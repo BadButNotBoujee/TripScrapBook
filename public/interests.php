@@ -7,7 +7,7 @@
                         $connection = makeConnection();
                         $stat = pg_connection_status($connection);
                        
-                       $sqlquery = "SELECT * FROM REMINDER";
+                       $sqlquery = "SELECT * FROM INTERESTS";
                        $result = pg_query($connection, $sqlquery);
                        
                         while($row = pg_fetch_row($result)) {
