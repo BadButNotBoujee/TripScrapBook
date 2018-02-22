@@ -1,5 +1,3 @@
-<?php require_once("../private/initialize.php"); ?>
-
 <?php
 
     $title = str_replace("\"","&quot", $_POST["interest-title"]);
@@ -17,7 +15,7 @@
     
     if($result){
         //  header('Location:'.WROOT.'/user/questions/all_questions.php?uname='.$username);
-        echo $result;
+       header('Location: /base.php');
     }else{
         echo "ERROR MAKING SUBMISSION";
     }

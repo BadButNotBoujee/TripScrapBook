@@ -1,4 +1,3 @@
-<?php require_once("../private/initialize.php"); ?>
 
 <div class="card" style="margin: 1em 1em 1em 1em;">
             <div class="card-header" style="color: black; background-color: #ffb3b3">Interests <button class="btn btn-success float-right" data-toggle="collapse" data-target="#interests-form">Add Interest</button></div>
@@ -18,8 +17,17 @@
                   <?php    
                         
                         $connection = makeConnection();
-                                              
-                      
+                        $stat = pg_connection_status($connection);
+                       
+                       $sqlquery = "SELECT * FROM INTERESTS";
+                       $result = pg_query($connection, $sqlquery);
+                       
+                        while($row = pg_fetch_row($result)) {
+                          echo "<hr>";
+                          echo "<u>#".$row[0]." : ".$row[1]."</u><br>".$row[2];
+                          echo "<hr>";
+                        }
+                       
                      pg_close($connection);  
                     
                     ?>

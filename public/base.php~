@@ -5,6 +5,8 @@
     
     <head>
        <title>Nice Trip Beta</title>
+        
+      <?php require_once(SHARED_PATH."/dependencies.php")?>
        <style type="text/css">
            .card-header, .btn {
                font-family: 'Oswald', sans-serif;
@@ -28,7 +30,6 @@
     <footer>
         <?php require_once(SHARED_PATH."/footer.php")?>
     </footer>
-    
-    <?php require_once(SHARED_PATH."/dependencies.php")?>
+   
       
 </html>
