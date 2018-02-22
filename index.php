@@ -1,4 +1,7 @@
 <?php require_once("./private/initialize.php"); ?>
+
+
+
 <!DOCTYPE html>
 <html>
     
@@ -29,11 +32,11 @@
           			  <div class="card-header " style="text-align: center">Login</div>
           					
           			  <div class="card-body"  style=" text-align: center;">
-          			  <form class="form-inline" style=" text-align: center;" >
+          			  <form class="form-inline" action="./public/loggedin.php" style=" text-align: center;" >
           			         			  
           			        <div class="form-group " >
 									<label for="pass">Password: </label>
-									<input type="password" class="form-control" id="pass"/>  					
+									<input type="password" class="form-control" id="pass" name="pass"/>  					
           					  </div>
           					  
           					<button class="btn btn-default" type="submit" >ENTER</button>   
@@ -74,7 +77,3 @@
       
 </html>
 
-
-<?php
-//header('Location: public/base.php');
-?>
