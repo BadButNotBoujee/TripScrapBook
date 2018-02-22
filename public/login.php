@@ -56,6 +56,7 @@
     
      <div class="col-sm-4">
            <?php require_once("./accomodation.php")?>
+             <?php require_once("./email.php")?>
       </div>
   
    <div class="col-sm-4">
@@ -69,6 +70,6 @@
      <div class="col-sm-12">
    
         <?php require_once("./interests.php")?>
-   
+      <?php require_once("./gooMap.php")?>
     </div>
 </div>
