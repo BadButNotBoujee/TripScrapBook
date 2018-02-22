@@ -61,7 +61,7 @@
                         ?>
 
 							<br>
-							<a href=<?php echo WROOT."/../private/initialize_database.php"?>><button class="btn btn-danger"  >INITIALISE DATABASE</button></a>
+							<!-- <a href=<?php echo WROOT."/../private/initialize_database.php"?>><button class="btn btn-danger"  >INITIALISE DATABASE</button></a> -->
 							                       
                         
           				<hr>
