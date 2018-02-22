@@ -45,7 +45,9 @@
           				
           				<hr>
           				<u>CONNECTION CONSOLE</u>
-          				   <?php $connection = makeConnection();
+          					   <?php 
+          					   
+          					   $connection = makeConnection();
                         $stat = pg_connection_status($connection); 
                         
                        	if($connection){
@@ -55,7 +57,7 @@
                        	}
                        	
                        	echo "<br> connection status: " .  $stat ; 
-                       	 pg_close($connection);
+                       	pg_close($connection);
                         ?>
                     
           				<hr>
